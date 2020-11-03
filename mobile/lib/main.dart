@@ -164,10 +164,6 @@ class _FiltroFormWidgetState extends State<FiltroFormWidget> {
   }
 }
 
-class FormLogin{
-  var textLogin = '';
-  var textSenha = '';
-}
 
 
 
