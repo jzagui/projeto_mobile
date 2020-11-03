@@ -68,20 +68,20 @@ class FormData {
 }
 
 
-class ProjectViewFormWidget extends StatefulWidget {
+class FiltroFormWidget extends StatefulWidget {
   final FormData form = new FormData();
 
   @override
   State<StatefulWidget> createState() {
-    return _ProjetcViewFormWidgetState(form);
+    return _FiltroFormWidgetState(form);
   }  
 }
 
-class _ProjetcViewFormWidgetState extends State<ProjectViewFormWidget> {
+class _FiltroFormWidgetState extends State<FiltroFormWidget> {
   final FormData form;
   int distancia = 0;
 
-  _ProjetcViewFormWidgetState(this.form);
+  _FiltroFormWidgetState(this.form);
 
   @override
   Widget build(BuildContext context) {
@@ -162,4 +162,9 @@ class _ProjetcViewFormWidgetState extends State<ProjectViewFormWidget> {
         ],)
     );
   }
+}
+
+class FormLogin{
+  var textLogin = '';
+  var textSenha = '';
 }
