@@ -168,6 +168,8 @@ class _FiltroFormWidgetState extends State<FiltroFormWidget> {
 
 
 
+
+
 class LoginData {
   String username = "";
   String password = "";
@@ -179,7 +181,16 @@ class LoginData {
   }
 }
 
-class MyLogin extends StatelessWidget {
+
+class MyThirdFormWidget extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return new _MyThirdFormWidgetState();
+  }
+}
+
+
+class _MyThirdFormWidgetState extends State<MyThirdFormWidget> {
   final GlobalKey<FormState> formKey = new GlobalKey<FormState>();
   final LoginData loginData = new LoginData();
 
@@ -191,7 +202,7 @@ class MyLogin extends StatelessWidget {
             key: formKey,
             child: Column(
               children: [
-               Text("Login:"),
+                Text("Login:"),
                 TextFormField(
                     keyboardType: TextInputType.emailAddress,
                     validator: (String inValue) {
